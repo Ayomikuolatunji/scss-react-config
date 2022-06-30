@@ -3,14 +3,21 @@ const path = require('path');
 const Sass = require('node-sass');
 
 
-const getComponents=(paths)=>{
+const getComponents=()=>{
    let allComponents=[];
-   const types=["atoms","molcules","organisms","pages","templates","styles"];
+   const types=["atoms","molecules"];
    types.forEach(type=>{
          const components=fs.readdirSync(`src/${type}`)
-          .map(fileName=>paths.resolve(fileName))
+          .map(fileName=>path.resolve(type,fileName))
          ;
+
+         allComponents=[
+            ...allComponents,
+            ...components
+         ]
    })
+
+   return allComponents;
 }
 
 const compile=(paths,fileName)=>{
@@ -32,7 +39,7 @@ const compile=(paths,fileName)=>{
     )
 }
 
-
+console.log(getComponents());
 compile("src/global.scss","dist/global.css")
 
 
