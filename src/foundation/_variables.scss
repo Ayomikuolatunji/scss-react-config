@@ -1,22 +1,20 @@
 // variables
 
 // colors
-$green:green;
-$blue:blue;
-$light-green:#e6f2e6;
-$light-blue:#e6f2e6;
-$red:red;
-$yellow:yellow;
-$orange:orange;
-$purple:purple;
-$pink:pink;
-$brown:brown;
-$black:black;
-$white:white;
-$gray:gray;
-$dark:#e6f2e6;
-
-
+$green: green;
+$blue: blue;
+$light-green: #e6f2e6;
+$light-blue: #e6f2e6;
+$red: red;
+$yellow: yellow;
+$orange: orange;
+$purple: purple;
+$pink: pink;
+$brown: brown;
+$black: black;
+$white: white;
+$gray: gray;
+$dark: #e6f2e6;
 
 // typography
 $font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -32,14 +30,12 @@ $line-height-extra-extra-loose: 2.4;
 $line-height-extra-extra-extra-loose: 3.2;
 $line-height-extra-extra-extra-extra-loose: 4.8;
 
-
-
 // breakpoints
 
-$breakpoints:(
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
 )
