@@ -1,7 +1,7 @@
 @import "./variables";
 
 @mixin mobile {
-  @media (max-width: "$breakpoints-sm") {
+  @media (max-width: "sm") {
      @content;
   }
 }
