@@ -15,4 +15,4 @@ const res=Sass.renderSync({
     ]
 })
 
-console.log(res);
+console.log(res.css);

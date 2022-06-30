@@ -1,25 +1,25 @@
-@mixin mobile-nav-toggle {
-  @media (max-width: $sm) {
-    .nav-toggle {
-      display: block;
-    }
+@import "./variables";
+
+@mixin mobile {
+  @media (max-width: "$breakpoints-sm") {
+     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: $md) {
+  @media (min-width: "md") {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (min-width: $lg) {
+  @media (min-width: "lg") {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: $xl) {
+  @media (min-width: "xl") {
     @content;
   }
 }

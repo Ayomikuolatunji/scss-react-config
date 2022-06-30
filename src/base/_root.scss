@@ -1,11 +1,11 @@
 :root {
-  --des-dark-text: #{$dark};
-  --des-bg-color: #{$white};
-  --des-button-bg-color: #{$red};
-  --des-button-bg-color-hover: #{$purple};
-  --des-button-bg-color-active: #{$yellow};
-  --des-header-bg-color: #{$dark};
-  --des-header-text-color: #{$white};
-  --des-header-text-color-hover: #{$brown};
-  --des-header-text-color-active: #{$pink};
+  --des-dark-text: #{$darks};
+  --des-bg-color: #{$whites};
+  --des-button-bg-color: #{$reds};
+  --des-button-bg-color-hover: #{$purples};
+  --des-button-bg-color-active: #{$yellows};
+  --des-header-bg-color: #{$darks};
+  --des-header-text-color: #{$whites};
+  --des-header-text-color-hover: #{$browns};
+  --des-header-text-color-active: #{$pinks};
 }
