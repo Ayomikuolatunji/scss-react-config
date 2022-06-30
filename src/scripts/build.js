@@ -10,7 +10,7 @@ const getComponents=()=>{
          const components=fs.readdirSync(`src/${type}`)
           .map(fileName=>(
               {
-                input:path.resolve(type,fileName),
+                input:`src/${type}/${fileName}`,
                 output:`dist/${fileName.slice(0,-4) + "css"}`
               }
           ))
@@ -46,5 +46,9 @@ const compile=(paths,fileName)=>{
 
 console.log(getComponents());
 compile("src/global.scss","dist/global.css")
+
+getComponents().forEach(({input,output})=>{
+    compile(input,output)
+})
 
 
