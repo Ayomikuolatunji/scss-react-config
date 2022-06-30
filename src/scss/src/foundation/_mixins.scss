@@ -35,7 +35,23 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
+    
+    @include mobile {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
     @include tablet {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    @include laptop {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    @include desktop {
         font-size: 17px;
         line-height: 1.5;
     }
