@@ -9,7 +9,7 @@ const Sass = require('node-sass');
 const compile=(paths,fileName)=>{
     const res=Sass.renderSync({
         data: fs.readFileSync(
-            path.resolve(path),
+            path.resolve(paths),
         ).toString(),
         outputStyle: 'expanded',
         outFile:"global.css",
@@ -20,11 +20,12 @@ const compile=(paths,fileName)=>{
     .css.toString()
 
     fs.writeFileSync(
-        paths.resolve(fileName)
+        path.resolve(fileName)
         ,res
     )
-    
 }
 
 
 compile("src/global.scss","dist/global.css")
+
+
