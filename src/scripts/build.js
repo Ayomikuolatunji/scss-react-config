@@ -8,10 +8,12 @@ const getComponents=()=>{
    const types=["atoms","molecules"];
    types.forEach(type=>{
          const components=fs.readdirSync(`src/${type}`)
-          .map(fileName=>{
-            input:path.resolve(type,fileName)
-            output:path.resolve`dist/${fileName.slice(0,-4) + "css"}`
-          })
+          .map(fileName=>(
+              {
+                input:path.resolve(type,fileName),
+                output:`dist/${fileName.slice(0,-4) + "css"}`
+              }
+          ))
          ;
 
          allComponents=[
