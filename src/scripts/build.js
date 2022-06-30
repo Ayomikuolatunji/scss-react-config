@@ -1,10 +1,17 @@
-
-
 const fs = require('fs');
 const path = require('path');
 const Sass = require('node-sass');
 
 
+const getComponents=(paths)=>{
+   let allComponents=[];
+   const types=["atoms","molcules","organisms","pages","templates","styles"];
+   types.forEach(type=>{
+         const components=fs.readdirSync(`src/${type}`)
+          .map(fileName=>paths.resolve(fileName))
+         ;
+   })
+}
 
 const compile=(paths,fileName)=>{
     const res=Sass.renderSync({
