@@ -8,6 +8,14 @@
     "lint": "stylelint './**/*.scss'",
     "lint:fix": "npm run lint -- --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": "npm run lint:fix"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -19,14 +27,6 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-prettier": "^2.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged":{
-    "*.scss":"npm run lint:fix"
   },
   "repository": {
     "type": "git",

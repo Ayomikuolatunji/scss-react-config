@@ -1,7 +1,8 @@
 {
     "rules": {
         "block-no-empty": null,
-        "unit-allowed-list": ["em", "rem", "%", "s","px","cm","mm","in","pt","pc","ch","vw","vh","vmin","vmax"]
+        "unit-allowed-list": ["em", "rem", "%", "s","px","cm","mm","in","pt","pc","ch","vw","vh","vmin","vmax"],
+        "unit-no-unknown": true
       },
     "plugins":["stylelint-prettier"],
     "extends":[
