@@ -1,0 +1,42 @@
+
+
+@mixin  mobile-nav-toggle {
+  @media (max-width: $sm) {
+    .nav-toggle {
+      display: block;
+    }
+  }
+}
+    
+
+@mixin  tablet {
+    @media  (min-width:$md) {
+        @content;
+    }
+}
+
+@mixin  laptop {
+
+    @media  (min-width: $lg) {
+        @content;
+    }
+}
+    
+@mixin  desktop {
+    @media  (min-width: $xl) {
+        @content;
+    }
+}
+
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    @include tablet {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+}

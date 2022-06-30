@@ -1,0 +1,45 @@
+// variables
+
+// colors
+$green:green;
+$blue:blue;
+$light-green:#e6f2e6;
+$light-blue:#e6f2e6;
+$red:red;
+$yellow:yellow;
+$orange:orange;
+$purple:purple;
+$pink:pink;
+$brown:brown;
+$black:black;
+$white:white;
+$gray:gray;
+$dark:#e6f2e6;
+
+
+
+// typography
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ft-xs: 14px;
+$ft-md: 17px;
+$ft-lg: 12px;
+$line-height-base: 1.42857143;
+$line-height-compact: 1.2;
+$line-height-tall: 1.5;
+$line-height-loose: 1.6;
+$line-height-extra-loose: 1.8;
+$line-height-extra-extra-loose: 2.4;
+$line-height-extra-extra-extra-loose: 3.2;
+$line-height-extra-extra-extra-extra-loose: 4.8;
+
+
+
+// breakpoints
+
+$breakpoints:(
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+)
