@@ -28,5 +28,3 @@ const compile=(paths,fileName)=>{
 
 
 compile("src/global.scss","dist/global.css")
-
-console.log(res);
