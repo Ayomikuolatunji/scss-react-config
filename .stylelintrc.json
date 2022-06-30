@@ -1,8 +1,7 @@
 {
     "rules": {
         "block-no-empty": null,
-        "unit-allowed-list": ["em", "rem", "%", "s","px","cm","mm","in","pt","pc","ch","vw","vh","vmin","vmax"],
-        "alpha-value-notation": ["percentage", { "exceptProperties": ["opacity"] }]
+        "unit-allowed-list": ["em", "rem", "%", "s","px","cm","mm","in","pt","pc","ch","vw","vh","vmin","vmax"]
       },
     "plugins":["stylelint-prettier"],
     "extends":[
