@@ -4,7 +4,8 @@
   "description": "learning scss npm configuration",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint './**/*.scss'"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,14 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-prettier": "^2.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayomikuolatunji/scss-react-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ayomikuolatunji/scss-react-config/issues"
+  },
+  "homepage": "https://github.com/Ayomikuolatunji/scss-react-config#readme"
 }
