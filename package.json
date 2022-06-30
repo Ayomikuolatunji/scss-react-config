@@ -25,6 +25,9 @@
       "pre-commit": "lint-staged"
     }
   },
+  "lint-staged":{
+    "*.scss":"npm run lint:fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ayomikuolatunji/scss-react-config.git"
