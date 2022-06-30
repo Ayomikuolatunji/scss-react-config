@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint './**/*.scss'",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "build":"node src/scripts/build.js"
   },
   "husky": {
     "hooks": {
@@ -21,6 +22,7 @@
   "dependencies": {
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "node-sass": "^7.0.1",
     "normalize-scss": "^7.0.1",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
